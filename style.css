@@ -11,7 +11,7 @@
 }
 body{
     font-weight: 300;
-    font-size: 1.05rem;
+    font-size: 16px; 
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
 }
@@ -21,7 +21,7 @@ body{
     font-family: inherit;
     cursor: pointer;
     outline: 0;
-    font-size: 1.05rem;
+    font-size: 16px; 
 }
 .text{
     opacity: 0.8;
@@ -38,18 +38,18 @@ body{
 .meal-wrapper{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 32px; 
     background: #fff;
     text-align: center;
 }
 .meal-search{
-    margin: 2rem 0;
+    margin: 32px 0; 
 }
 .meal-search cite{
-    font-size: 1rem;
+    font-size: 16px;
 }
 .meal-search-box{
-    margin: 1.2rem 0;
+    margin: 19.2px 0; 
     display: flex;
     align-items: stretch;
 }
@@ -58,14 +58,14 @@ body{
     width: 100%;
 }
 .search-control{
-    padding: 0 1rem;
-    font-size: 1.1rem;
+    padding: 0 16px;
+    font-size: 17.6px;
     font-family: inherit;
     outline: 0;
     border: 1px solid var(--tenne-tawny);
     color: var(--tenne-tawny);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 32px; 
+    border-bottom-left-radius: 32px;
 }
 .search-control::placeholder{
     color: var(--tenne-tawny);
@@ -73,12 +73,12 @@ body{
 .search-btn{
     width: 55px;
     height: 55px;
-    font-size: 1.8rem;
+    font-size: 28.8px; 
     background: var(--tenne-tawny);
     color: #fff;
     border: none;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 32px; 
+    border-bottom-right-radius: 32px; 
     transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
@@ -89,46 +89,38 @@ body{
     background: var(--tenne-tawny-dark);
 }
 .meal-result{
-    margin-top: 4rem;
+    margin-top: 64px; 
 }
 #meal{
-    margin: 2.4rem 0;
+    margin: 38.4px 0;
 }
 .meal-item{
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    border-radius: 16px; 
     overflow: hidden;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-    margin: 2rem 0;
+    margin: 32px 0; 
 }
 .meal-img img{
     width: 100%;
     display: block;
 }
 .meal-name{
-    padding: 1.5rem 0.5rem;
+    padding: 24px 8px; 
 }
 .meal-name h3{
-    font-size: 1.4rem;
+    font-size: 22.4px;
 }
 .recipe-btn{
     text-decoration: none;
     color: #fff;
     background: var(--tenne-tawny);
     font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.75rem 0;
+    font-size: 17.6px; 
+    padding: 12px 0;
     display: block;
     width: 175px;
-    margin: 1rem auto;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    margin: 16px auto; 
+    border-radius: 32px;
     transition: all 0.4s linear;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
@@ -145,35 +137,26 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    /* -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); */
     color: #fff;
     background: var(--tenne-tawny);
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    border-radius: 16px; 
     width: 90%;
     height: 90%;
     overflow-y: scroll;
     display: none;
-    padding: 2rem 0;
+    padding: 32px 0; 
 }
 .meal-details::-webkit-scrollbar{
     width: 10px;
 }
 .meal-details::-webkit-scrollbar-thumb{
     background: #f0f0f0;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    border-radius: 32px; 
 }
-
 
 /* js related */
 .showRecipe{
@@ -181,25 +164,21 @@ body{
 }
 
 .meal-details-content{
-    margin: 2rem;
+    margin: 32px;
 }
 .meal-details-content p:not(.recipe-category){
-    padding: 1rem 0;
+    padding: 16px 0; 
 }
 .recipe-close-btn{
     position: absolute;
-    right: 2rem;
-    top: 2rem;
-    font-size: 1.8rem;
+    right: 32px; 
+    top: 32px; 
+    font-size: 28.8px; 
     background: #fff;
     border: none;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,73 +186,47 @@ body{
 }
 .recipe-title{
     letter-spacing: 1px;
-    padding-bottom: 1rem;
+    padding-bottom: 16px; 
 }
 .recipe-category{
     background: #fff;
     font-weight: 600;
     color: var(--tenne-tawny);
     display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-}
-.recipe-category{
-    background: #fff;
-    font-weight: 600;
-    color: var(--tenne-tawny);
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
+    padding: 3.2px 8px; 
+    border-radius: 4.8px; 
 }
 .recipe-instruct{
-    padding: 1rem 0;
+    padding: 16px 0; 
 }
 .recipe-meal-img img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     margin: 0 auto;
     display: block;
 }
 .recipe-link{
-    margin: 1.4rem 0;
+    margin: 22.4px 0; 
 }
 .recipe-link a{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 19.2px; 
     font-weight: 700;
     transition: all 0.4s linear;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
 }
 .recipe-link a:hover{
     opacity: 0.8;
 }
 
-
 /*  */
 .notFound{
     grid-template-columns: 1fr!important;
     color: var(--tenne-tawny);
-    font-size: 1.8rem;
+    font-size: 28.8px;
     font-weight: 600;
     width: 100%;
 }
-
 
 
 
@@ -292,7 +245,7 @@ body{
     #meal{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 32px;
     }
     .meal-item{
         margin: 0;
