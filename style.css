@@ -80,10 +80,7 @@ body{
     border-top-right-radius: 32px; 
     border-bottom-right-radius: 32px; 
     transition: all 0.4s linear;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
+
 }
 .search-btn:hover{
     background: var(--tenne-tawny-dark);
@@ -122,10 +119,7 @@ body{
     margin: 16px auto; 
     border-radius: 32px;
     transition: all 0.4s linear;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
+
 }
 .recipe-btn:hover{
     background: var(--tenne-tawny-dark);
@@ -137,10 +131,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%); */
+
     color: #fff;
     background: var(--tenne-tawny);
     border-radius: 16px; 

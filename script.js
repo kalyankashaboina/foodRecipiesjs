@@ -1,6 +1,11 @@
 const searchBtn = document.getElementById('search-btn');
+// search page
 const mealList = document.getElementById('meal');
+
+
+// create meal cards
 const mealDetailsContent = document.querySelector('.meal-details-content');
+// recipie closing button
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // event listeners
@@ -17,6 +22,8 @@ function getMealList(){
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
     .then(response => response.json())
     .then(data => {
+
+        console.log(data)
         let html = "";
         if(data.meals){
             data.meals.forEach(meal => {
@@ -54,7 +61,7 @@ function getMealRecipe(e){
     }
 }
 
-// create a modal
+// create a show more page
 function mealRecipeModal(meal){
     console.log(meal);
     meal = meal[0];
