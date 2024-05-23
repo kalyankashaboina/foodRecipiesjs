@@ -11,19 +11,23 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 // event listeners
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
+
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
 
 // get meal list that matches with the ingredients
+
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
     .then(response => response.json())
     .then(data => {
 
-        console.log(data)
+
+        // console.log(mealList.classList)
+        // console.log(data)
         let html = "";
         if(data.meals){
             data.meals.forEach(meal => {
@@ -46,22 +50,32 @@ function getMealList(){
         }
 
         mealList.innerHTML = html;
+        // console.log(mealList)
     });
 }
 
 
-// get recipe of the meal
-function getMealRecipe(e){
+
+// function to get the recipe of a meal
+function getMealRecipe(e) {
     e.preventDefault();
-    if(e.target.classList.contains('recipe-btn')){
-        let mealItem = e.target.parentElement.parentElement;
+    
+    
+    if (e.target.className === 'recipe-btn') {
+        // find the meal item element
+        let mealItem = e.target.closest('.meal-item');
+        
+        // fetch the meal data using the meal items data-id 
+        console.log(mealItem.dataset.id)
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
-        .then(response => response.json())
-        .then(data => mealRecipeModal(data.meals));
+            .then(response => response.json())
+            .then(data => mealRecipeModal(data.meals));
     }
 }
 
+
 // create a show more page
+// here above we are calling mealrecipemodal functuion and passing argument and here below we are writing a function cards
 function mealRecipeModal(meal){
     console.log(meal);
     meal = meal[0];
