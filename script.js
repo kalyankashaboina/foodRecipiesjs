@@ -98,6 +98,6 @@ function mealRecipeModal(meal){
     `;
     mealDetailsContent.innerHTML = html;
     console.log(mealDetailsContent.parentElement)
-    
+
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
