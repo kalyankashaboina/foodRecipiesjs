@@ -3,7 +3,7 @@ const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 
 
-// create meal cards
+// create seemore card
 const mealDetailsContent = document.querySelector('.meal-details-content');
 // recipie closing button
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
@@ -12,12 +12,13 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
 
+// removes  seemorecard
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
 
-// get meal list that matches with the ingredients
+// get meal list that matches with the search input
 
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
@@ -78,6 +79,8 @@ function getMealRecipe(e) {
 // here above we are calling mealrecipemodal functuion and passing argument and here below we are writing a function cards
 function mealRecipeModal(meal){
     console.log(meal);
+
+
     meal = meal[0];
     let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
@@ -94,5 +97,7 @@ function mealRecipeModal(meal){
         </div>
     `;
     mealDetailsContent.innerHTML = html;
+    console.log(mealDetailsContent.parentElement)
+    
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
